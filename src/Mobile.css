@@ -1,6 +1,6 @@
 #product img{
-    width: 6rem;
-    height:6rem
+    width: 5rem;
+    height:5rem
 }
 #product{
     display: flex;
@@ -11,3 +11,18 @@
 #product #about{
     width: 30vw;
 }
+#product button{
+    border: none;
+    background-color: white;
+}
+#product{
+    font-weight: 700;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.2rem;
+  }
+  #product #count button{
+    font-size: 1.3rem;
+    color: blue;
+  }

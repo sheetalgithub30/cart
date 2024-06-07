@@ -4,6 +4,8 @@ import './App.css'
 import data from './Data.js'
 import Mobile from './Mobile.jsx'
 
+
+
 function App() {
   const [product,setProduct] = useState([]);
   const [total,setTotal] = useState(0);
@@ -54,7 +56,7 @@ useEffect(()=>{
     <div id="main">
       <div id="navbar">
         <h1>Product Cart</h1>
-        <p>🛒{cart} </p>
+        <p><i class="fa-solid fa-cart-plus"></i><span>{cart}</span> </p>
       </div>
       {product.length > 0 ? (
         <div>
@@ -74,11 +76,12 @@ useEffect(()=>{
              }}/>
         })}
       </div>
-
+ 
       <div id="bottom">
+        <div id="hr"></div>
       <div id="sum">
         <h3>Total</h3>
-        <h3>${total}</h3>
+        <h3 id="tot">${total}</h3>
       </div>
       <div id="clear">
         <button onClick={()=>{
@@ -88,7 +91,9 @@ useEffect(()=>{
       </div>
       </div>
       ):(
-        <p>There is no item in your bag</p>
+        <div id="error">
+        <p><b>Your Cart is EMPTY!</b></p>
+        </div>
       )}
 
     </div>
