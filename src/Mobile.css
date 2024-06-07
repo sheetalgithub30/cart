@@ -1,0 +1,13 @@
+#product img{
+    width: 6rem;
+    height:6rem
+}
+#product{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+}
+#product #about{
+    width: 30vw;
+}

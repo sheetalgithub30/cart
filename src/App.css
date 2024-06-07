@@ -1,0 +1,15 @@
+
+#main #navbar{
+  display: flex;
+  justify-content: space-around;
+  background-color: blue;
+}
+#main #navbar p{
+  font-size: 2rem;
+}
+#main #products{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
